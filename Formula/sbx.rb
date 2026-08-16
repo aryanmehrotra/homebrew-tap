@@ -56,6 +56,9 @@ class Sbx < Formula
     # version the formula claims. A formula that installs the wrong release still passes a
     # test that only greps the help text.
     assert_match "v#{version}", shell_output("#{bin}/sbx --version")
-    assert_match "sandboxes", shell_output("#{bin}/sbx --help")
+
+    # 2>&1 because v0.1.0 printed --help to stderr. Fixed after that release, and merging the
+    # streams here keeps this formula working against both.
+    assert_match "sandboxes", shell_output("#{bin}/sbx --help 2>&1")
   end
 end

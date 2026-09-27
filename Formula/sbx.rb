@@ -3,30 +3,30 @@
 class Sbx < Formula
   desc "Per-branch sandboxes that sleep when nobody is using them"
   homepage "https://github.com/aryanmehrotra/sbx"
-  version "0.13.0"
+  version "0.13.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/aryanmehrotra/sbx/releases/download/v0.13.0/sbx_v0.13.0_darwin_arm64"
-      sha256 "76a60b44581eee867359864e62efcae96bcad71bdba03f6242cf7aad4c49d26c"
+      url "https://github.com/aryanmehrotra/sbx/releases/download/v0.13.2/sbx_v0.13.2_darwin_arm64"
+      sha256 "b643d90962843a5cbd8064813724469facec9e874983963a02a481938f4fd2b1"
     end
 
     on_intel do
-      url "https://github.com/aryanmehrotra/sbx/releases/download/v0.13.0/sbx_v0.13.0_darwin_amd64"
-      sha256 "dd77fe32a583818800bd0b257ce3e398285637da278d1bf888e49a804f52eb73"
+      url "https://github.com/aryanmehrotra/sbx/releases/download/v0.13.2/sbx_v0.13.2_darwin_amd64"
+      sha256 "282710385ad415728df44cd44885dc989f787cee43587aafa5d073c683890b90"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/aryanmehrotra/sbx/releases/download/v0.13.0/sbx_v0.13.0_linux_arm64"
-      sha256 "13d14e47a54eaad000223a91dde5c99095491b6846952954f21d093fa0031da7"
+      url "https://github.com/aryanmehrotra/sbx/releases/download/v0.13.2/sbx_v0.13.2_linux_arm64"
+      sha256 "f7cf8c852dcf220118e9502bd1dad89608ea90ee45111bdc3e38bc9033977ee7"
     end
 
     on_intel do
-      url "https://github.com/aryanmehrotra/sbx/releases/download/v0.13.0/sbx_v0.13.0_linux_amd64"
-      sha256 "b88cbe4fc40127a32e221482dc780cc8d3486e4ae34e77ce3fc2495dddcc934e"
+      url "https://github.com/aryanmehrotra/sbx/releases/download/v0.13.2/sbx_v0.13.2_linux_amd64"
+      sha256 "776872fb913558bb0c26b93b6c36930f44f6d2f49df77bfecbc88f341a4548f1"
     end
   end
 
